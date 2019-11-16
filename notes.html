@@ -1,0 +1,15 @@
+---
+layout: page
+---
+{% for class in site.classes %}
+  <h2>{{ class.title }} - {{ class.semester }}</h2>
+  <p>{{ class.notes_dir }}</p>
+  
+  <ul>
+    {% for file in site.static_files %}
+      {% if file.path contains class.notes_dir %}
+    	<li><a href="{{ file.path }}">{{ file.name }}</a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+{% endfor %}
