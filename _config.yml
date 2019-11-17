@@ -12,7 +12,7 @@ safe: true
 
 # edit here to achieve your personal greatness
 url: ColinPR.github.io
-baseurl: ""
+baseurl: "/"
 title: Colin Roberts
 author: Colin Roberts
 description: This is my website. Read it, enjoy it. 
