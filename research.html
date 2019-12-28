@@ -1,15 +1,114 @@
 ---
 layout: page
+title: Research
 ---
-{% for class in site.classes %}
-  <h2>{{ class.title }} - {{ class.semester }}</h2>
-  <p>{{ class.notes_dir }}</p>
-  
-  <ul>
-    {% for file in site.static_files %}
-      {% if file.path contains class.notes_dir %}
-    	<li><a href="{{ file.path }}">{{ file.name }}</a></li>
-      {% endif %}
-    {% endfor %}
-  </ul>
-{% endfor %}
+<section id="Research">
+<div class="container">
+  <div class="panel panel-default">
+    <div class="panel-body">
+        <div style="border:3px; border-style:solid; border-color:#27A822; padding: 1em;">
+        <h2>
+            <b> Research Statement </b>
+        </h2>
+        <h5><i>
+            As a mathematician, I am interested in physical problems and geometry.  In my mind, the linkage between these two components is through partial differential equations (PDEs). PDEs are typically studied in an analytical sense with boundary value problems posed on subregions in n-dimensional Eucliean space.  However, the coordinate free perspective granted by Riemannian geometry may provide new insights or techniques to make progress in both old and new problems.
+        </i></h5>
+        </div>
+        <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        * {
+          box-sizing: border-box;
+        }
+
+        /* Create two equal columns that floats next to each other */
+        .column {
+          float: left;
+          width: 50%;
+          padding: 50px;
+         /*height: 300px; /* Should be removed. Only for demonstration */-->
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+          .column {
+            width: 100%;
+          }
+        }
+        </style>
+        </head>
+        <body>
+
+        <div class="row">
+          <div class="column" style="background-color:#FFFFFF;">
+            <!-- COLUMN 1 -->
+            <h2><a href="{{ site.baseurl }}publications.html"> Publications </a></h2>
+          </div>
+          <div class="column" style="background-color:#FFFFFF;">
+            <!-- COLUMN 2 -->
+            <h2><a href="{{ site.baseurl }}research_talks.html"> Research Talks </a> </h2>
+          </div>
+        </div>
+
+        </body>
+        <h3>
+              <b>  Mathematical Physics </b>
+        </h3>
+        <p>
+            Physics is an experimental and theoretical science. It lies in the balance of theory being confirmed by experiment while experiment may drave theory. The realm of theoretical physics is concerned with finding mathematical theories that describe our world in ways we will (hopefully) assert via experimentation.
+        </p>
+            
+        <p>
+        Mathematical physics is a broad subject. I like to think of it as dual to theoretical physics in that a mathematical physicist expands the mathematics found in the theoretical models that physicist create.  A mathematician is concerned with the rigor of the mathematics being correct, whereas a physicist cares about the model working properly. Hence, there is indeed a gap that must be filled in order for the mathematics to be well-posed.
+        </p>
+        
+        <h3>
+            <b> Riemannian Geometry </b>
+        </h3>
+            
+        <p>
+        In the early years of an undergraduate degree, STEM students study calculus.  Those who need it, study calculus in higher dimensions (most likely 3-dimensions).  But, this calculus is restricted to the study of objects that sit naturally inside of an n-dimensional Euclidean space.  For one, this limits the scientist on, for example, the 3-dimensional domains they may study (as not all can be embedded nicely in 3-dimensional space). Moreover, this also forces one's hand in placing extrinsic coordinate representations onto their spaces. This is not ideal.
+        </p>
+        
+        <p>
+        In comes the helping hand of Riemannian geometry.  For me, Riemannian geometry is the suitable generalization of Euclidean spaces to include their non-Euclidean cousins.  As a benefit, one receives an intrinsic theory of the domain of interest and many concepts are readily generalized with no mention of coordinate representations.
+        </p>
+        
+        <h3>
+                <b> Partial Differential Equations </b>
+        </h3>
+        
+        <p>
+        The world around us is a complex dyamical beast.  One such way of capturing the behavior of model systems is through PDEs.  A motivating example is the model of heat flow on a piece of ice where heat is being pumped into the ice through its boundary.  Even such a simple system can become complex. Yet, in order to be able to solve such models, we make simplifying assumptions (the cube is homogeneous in specific heat, it cannot melt, and it is nicely shaped). When we remove such restrictions, we find ourselves in the realm of numerical PDEs and computing.
+        </p>
+        
+        <p>
+        PDEs are also highly geometrical as one finds the relationships causing dynamics to be intimately connected to the structure of the domain of interest.  In the previous example, we can imagine the crystaline structure of ice allows one to understand the routes that energy must flow, and it is through this geometric information that we are capturing change.
+        </p>
+        
+        <h3>
+                <b> Variational Methods </b>
+        </h3>
+        
+        <p>
+        Variational methods give rise to PDEs via optimization blah blah.
+        </p>
+        
+        <h3>
+                <b> Geometric Algebra </b>
+        </h3>
+        
+        <p>
+        Geometric algebra plays the role of properly generalizing the Helmholtz 3-dimensional vector algebra as well as the exterior algebra of Grassmann.
+        </p>
+    </div>
+  </div>
+</div>
+</section>
