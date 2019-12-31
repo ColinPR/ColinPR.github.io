@@ -32,5 +32,4 @@ exclude: [vendor]
 
 collections:
   - classes
-  - teaching
   
